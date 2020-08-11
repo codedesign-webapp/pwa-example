@@ -1,5 +1,7 @@
 # "Do it! 프로그레시브 웹앱 만들기" 책 실습 소스코드 소개
 
+<img src="https://github.com/codedesign-webapp/pwa-about/blob/master/images/pwa-img-3d.png" width="300" height="389">
+
 ## 1. About
 - "Do it! 프로그레시브 웹앱 만들기" (이지스퍼블리싱, 김응석 저) 책 실습예제 완성 소스코드입니다.
 - 버전에 상관 없이 실행할 수 있는 완성된 소스파일과 책 내용에 따라 직접 따라해 볼 수 있는 프로젝트 템플릿이 준비되어 있습니다.
