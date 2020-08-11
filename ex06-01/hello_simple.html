@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- 모바일 기기의 접속 시 화면 크기 조절을 위해 뷰포트 설정 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <!-- vuetify.js에 필요한 스타일 파일 링크 연결 -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.2.x/dist/vuetify.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <!-- 첫 화면의 시작은 v-app 엘리먼트 사용 -->
+    <v-app>
+      <!-- 상단 부분은 v-app-bar 엘리먼트 사용 -->
+      <v-app-bar app>
+        <v-app-bar-nav-icon></v-app-bar-nav-icon>
+        <v-toolbar-title>Header입니다.</v-toolbar-title>
+      </v-app-bar>
+
+      <!-- 콘텐츠 부분은 v-content 엘리먼트 사용 -->
+      <v-content>
+        안녕하세요
+        <v-container>Contents입니다.</v-container>
+      </v-content>
+
+      <!-- 하단 부분은 v-footer 엘리먼트 사용 -->
+      <v-footer>
+        <div>Footer입니다.</div>
+      </v-footer>
+    </v-app>
+  </div>
+
+  <!-- 필요한 Vue.js와 Vuetify.js의 자바스크립트 연결 -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify()
+    })
+  </script>
+</body>
+
+</html>

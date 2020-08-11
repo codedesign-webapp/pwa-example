@@ -1,0 +1,28 @@
+{
+  "name": "ex11",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "firebase": "^7.17.1",
+    "register-service-worker": "^1.6.2",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "vuefire": "^2.2.0-alpha.0",
+    "vuetify": "^2.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.4.6",
+    "@vue/cli-plugin-pwa": "^3.11.0",
+    "@vue/cli-service": "^4.4.6",
+    "sass": "^1.17.4",
+    "sass-loader": "^9.0.2",
+    "vue-cli-plugin-vuetify": "^2.0.7",
+    "vue-template-compiler": "^2.6.10",
+    "vuetify-loader": "^1.6.0"
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <button onclick="
+        // 콜백함수를 순서대로 실행하면 콜백지옥의 문제점 발생!
+        fnProductReady(1, 2000, function (pRet) {
+            console.log(pRet);
+            fnProductReady(2, 1000, function (pRet) {
+                console.log(pRet);
+                fnProductReady(3, 500, function (pRet) {
+                    console.log(pRet);
+                    console.log('가독성이 낮고 유지보수하기 어려운 콜백 지옥 발생!');
+                })
+            })
+        })        
+    ">콜백함수 실행!</button>
+    
+    <script>
+        // 콜백함수 생성
+        function fnProductReady(pNum, pTime, fnCallback) {
+            setTimeout(() => {
+                console.log(pNum);
+                fnCallback('상품이 성공적으로 배송되었습니다.');
+            }, pTime); // 타이머로 가상의 네트워크 지연상황 연출함
+        }
+    </script>
+</body>
+</html>

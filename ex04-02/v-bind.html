@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <style>
+      /* 화면에 렌더링할 때 사용할 제목 색상을 파랑색으로 정의 */
+      .blue_style { color: blue}
+  </style>
+</head>
+<body>
+    <div id="main">
+        <!-- v-bind 안에도 자바스크립트 사용 가능하므로 변수와 문당을 연결하여 클래스이름을 완성하여 연결함 -->
+        <h1 v-bind:class="sColorName + '_style'">안녕하세요</h1>        
+        <!-- 콜론(:) 앞은 생략 가능 -->
+        <input :value="sDate">
+    </div>
+    <script>
+      var app2 = new Vue({
+        el: '#main',
+        data: {
+          // Date 객체의 getFullYear() 메서드로 올해 년도 문장을 준비함
+          sDate: '올해 년도: ' + new Date().getFullYear(),
+          sColorName: 'blue'
+        }
+      })
+    </script>
+</body>
+</html>

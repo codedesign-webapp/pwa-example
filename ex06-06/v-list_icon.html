@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.2.x/dist/vuetify.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <v-app>
+            <v-app-bar app color="blue" dark>
+                <!-- 좌측에 메뉴 아이콘 넣음 -->
+                <v-app-bar-nav-icon></v-app-bar-nav-icon>
+                <v-toolbar-title>Virtual Company</v-toolbar-title>
+            </v-app-bar>
+            <v-content>
+                <v-container>
+                    <v-card>
+                        <v-list two-line v-for="item in aList" v-bind:key="item.id">
+                            <!-- 항목을 하나씩 가져와서 item 단위로 표시함 -->
+                            <v-list-item @click="">
+                                <!-- 좌측에 대표 아이콘을 먼저 표시함 -->
+                                <v-list-item-avatar>
+                                    <v-icon :class="[item.icon_style]">{{ item.icon_name }}</v-icon>
+                                </v-list-item-avatar>
+                                <!-- 제목을 렌더링함 -->
+                                <v-list-item-content>
+                                    <v-list-item-title>{{ item.title }}</v-list-item-title>
+                                </v-list-item-content>
+                                <!-- 우측에 화살표 아이콘을 넣음 -->
+                                <v-list-item-action>
+                                    <v-btn icon>
+                                        <v-icon color="grey">keyboard_arrow_right</v-icon>
+                                    </v-btn>
+                                </v-list-item-action>
+                            </v-list-item>
+                        </v-list>
+                    </v-card>
+                </v-container>
+            </v-content>
+        </v-app>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.x/dist/vuetify.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            vuetify: new Vuetify(),
+            data() {
+                return {
+                    // 반복되는 항목들은 JSON 배열 데이터로 만들어 반환함
+                    aList: [{
+                            icon_name: 'account_balance',
+                            icon_style: 'red white--text',
+                            title: '회사 소개',
+                        },
+                        {
+                            icon_name: 'photo',
+                            icon_style: 'green white--text',
+                            title: '제품 이미지',
+                        },
+                        {
+                            divider: false,
+                            icon_name: 'movie',
+                            icon_style: 'yellow white--text',
+                            title: '홍보 동영상',
+                        }
+                    ]
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+  <div id="main">
+    <p>{{ sMsg }}</p>
+    <!-- v-model은 데이터에 접근해서 가져오는 것과 동시에 입력이 동기화 됨 -->
+    <!-- 엘리먼트의 어트리뷰트는 'v-model:' 다음에 명시하면 됨 -->
+    <input v-model:value="sMsg">
+  </div>
+  <script>
+    var main = new Vue({
+      el: '#main',
+      data: {
+        sMsg: '안녕하세요!'
+      }
+    })
+  </script>
+</body>
+
+</html>

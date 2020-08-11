@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.2.x/dist/vuetify.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <v-app>
+      <v-content>
+        <v-container>
+          <!-- 카드 UI 사용을 선언하는 v-card 엘리먼트 -->
+          <v-card max-width="400">
+            <!-- 카드 상단에 이미지를 배치시킴 -->
+            <v-img src="https://picsum.photos/id/1068/400/300" aspect-ratio="2.3"></v-img>
+            
+            <!-- 카드 중간에 텍스트를 배치시킴 -->
+            <v-card-text>
+              <div>
+                <!-- 제목의 타이포그래피 스타일을 title으로 설정-->
+                <!-- 하단의 margin 크기값을 1로 설정-->
+                <h2 class="title primary--text mb-2">시대정신 선도</h2>
+              
+                버추얼 컴퍼니에 관심을 가져 주셔서 감사합니다. 버추얼 컴퍼니는 오랜 역사를 지니며 그동안 많은 발전을 하였습니다.
+              </div>
+            </v-card-text>
+
+            <!-- 카드 하단에 버튼을 배치시킴 -->
+            <v-card-actions>
+              <!-- 버튼색상은 붉은색으로 설정  -->
+              <v-btn color="red white--text">확인</v-btn>
+              <!-- outline으로 버튼의 배경색을 없앰 -->
+              <v-btn outlined color="red" >취소</v-btn>
+              <v-btn color="#9C27B0" dark>취소</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-container>
+      </v-content>
+    </v-app>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify()
+    })
+  </script>
+</body>
+
+</html>

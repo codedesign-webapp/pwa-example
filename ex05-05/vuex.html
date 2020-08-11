@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- Vuex를 사용하기 위해 CDN 연결 -->
+    <script src="https://unpkg.com/vuex"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>안녕하세요!</h1>
+        <!-- 카운터 신규 엘리먼트 2개 사용. msg 속성에 이름만 다르게 적용 -->
+        <com-counter msg="카운터1"></com-counter>
+        <com-counter msg="카운터2"></com-counter>
+    </div>
+</body>
+
+<script>
+    // Vuex의 store 중앙에 state, mutations(setters), getters, actions을 정의함
+    const store = new Vuex.Store({
+        // count 값을 상태값으로 정의
+        state: {
+            count: 0
+        },
+        // mutations는 getters의 대칭되는 setters의 역할을 설정
+        mutations: {
+            // 일반적인 함수 형식으로 count 상태값을 증가 시키도록 정의
+            fnIncData: function (state) {
+                return state.count++
+            },
+            // 함수를 간단하게 1줄로 압축하여 => 연산자를 활용해 count 상태값을 감소 시키도록 정의
+            fnDecData: state => state.count--
+        },
+        getters: {
+            // 상태값을 반환함
+            fnGetData(state) {
+                return state.count;
+            },
+        },
+        actions: {
+            // 상태값을 감소시키는 함수는 서버단에서 실행한다는 가정을 해봄. 따라서 비동기 실행으로 정의하기 위해 async를 사용하고 매개변수로 commit 객체 전달
+            async fnDecData({
+                commit
+            }, state) {
+                // 가상으로 만든 원격 API 실행
+                const result = await api.fnDecrement();
+                // 원격 API가 성공할 경우에 비로소 fnDecData 함수 실행
+                if (result == true) commit('fnDecData')
+            }
+        }
+    })
+
+    // 타이머를 사용해 1초 후 True 값을 반환하도록 가상으로 원격 서버 API 정의
+    const api = {
+        fnDecrement() {
+            // 비동기 계산을 수행하기 위해 Promise를 사용하고 그에 따른 성공 값을 반환하기 위해 resolve 함수 실행
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve(true);
+                }, 1000); // 원격서버 느낌을 내기 위해 1초 딜레이 시킴
+            });
+        },
+    };
+
+    // com-counter라는 신규 엘리먼트 등록
+    Vue.component('com-counter', {
+        // 카운터 제목은 엘리먼트의 msg 속성값을 받아서 렌더링 함
+        props: ['msg'],
+        template: `
+            <div>
+                <h2>{{ msg }}</h2>
+                <p>카운터: {{ fnGetCount }}</p>
+                <button @click="fnIncCount">+1 증가</button>
+                <button @click="fnDecCount">-1 감소(원격 API 실행)</button>
+                <hr>
+            </div>`,
+        computed: {
+            // 카운터 값은 store에서 getters에 접근하여 값을 가져온 후 렌더링함
+            fnGetCount() {
+                return store.getters.fnGetData;
+            }
+        },
+        methods: {
+            // 카운터 증가는 동기실행을 가정하고 직접 store의 mutations에 접근하여 실행
+            fnIncCount() {
+                store.commit('fnIncData')
+            },
+            //카운터 감소는 원격 서버 API로 비동기 실행을 가정하고 actions에 접근하여 실행
+            fnDecCount() {
+                store.dispatch('fnDecData')
+            }
+        }
+    })
+
+    var app = new Vue({
+        el: '#app',
+        // store 사용을 선언함
+        store
+    })
+</script>
+
+</html>

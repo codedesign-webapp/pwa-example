@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title></title>
+   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+  <div id="main">
+    <p>클릭 숫자 : {{ nClicks }}</p>
+    <p>카운트 다운 : {{ fnCounter }}</p>
+    <!-- 버튼이 눌리면 fnIncrement 메서드 실행 -->
+    <button v-on:click="fnIncrement" >눌러주세요!</button>
+  </div>
+</body>
+<script>
+  new Vue({
+    el: '#main',
+    data: {
+      nClicks: 0
+    },
+    // computed는 mustache안에 로직이 복잡할 때 사용
+    computed: {
+      fnCounter() {
+        // nClicks 값이 10을 기준으로 거꾸로 카운트 되도록 하나 감소시킴
+        return 10 - this.nClicks;
+      }
+    },
+    // 메서드는 이벤트핸들러 로직을 실행할 때 사용
+    methods: {
+      // nClicks 값을 하나 증가시킴
+      fnIncrement() {
+        this.nClicks++;
+      }
+    }
+  });
+</script>
+</html>

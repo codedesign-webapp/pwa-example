@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <button onclick="
+        console.log(fnSayHello());
+        console.log('1+2 =',fnPlusNumbers1(1, 2));
+        console.log('2+3 =',fnPlusNumbers2(2, 3));
+        console.log('3+4 =',fnPlusNumbers3(3, 4));
+        console.log('4+1 =',fnPlusNumbers4(4));
+    " id="clickme">화살표 함수 실행!</button>
+
+    <script>
+        // 전통적 함수 표현
+        const fnPlusNumbers1 = function (pNum1, pNum2) {
+            return pNum1 + pNum2;
+        }
+        // 화살표 함수 형식1 : 일반 반환
+        const fnPlusNumbers2 = (pNum1, pNum2) => {
+            return pNum1 + pNum2;
+        }
+        // 화살표 함수 형식2 : 암묵적 반환
+        const fnPlusNumbers3 = (pNum1, pNum2) => pNum1 + pNum2;
+        // 화살표 함수 형식3 : 매개변수 1개 일 때 소괄호 생략 가능
+        const fnPlusNumbers4 = pNum => pNum+1;
+        // 화살표 함수 형식4 : 매개변수 없을 때 반드시 소괄호 사용
+        const fnSayHello = () => '안녕하세요!';
+    </script>
+</body>
+</html>

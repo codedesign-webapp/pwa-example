@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+  <div id="main">
+      <h1>좋아하는 과일은?</h1>
+      <ol>
+          <!-- v-for를 통해서 반복문으로 aFruits 과일 배열 데이터를 가져옴 -->
+          <li v-for="item in aFruits">
+            <!-- aFruits 안의 sFruitsName 항목을 하나씩 꺼내서 html로 렌더링 함-->
+            {{ item.sFruitName }}
+          </li>
+        </ol>
+  </div>
+  <script>
+    var main = new Vue({
+      el: '#main',
+      data: {
+        // 과일의 이름들을 가진 aFruits 배열을 데이터로 정의함
+        aFruits: [
+          { sFruitName: '사과' },
+          { sFruitName: '오렌지' },
+          { sFruitName: '포도' }
+        ]
+      }
+    })
+  </script>
+</body>
+</html>

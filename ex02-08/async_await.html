@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <!-- async의 함수를 실행 -->
+    <button onclick="fnDoAsyncFunc();">async, await : 상품 배송 시작!</button>
+
+    <script>
+        // await으로 비동기 함수를 순서대로 실행. 
+        // Promise보다 소스가 간결하고 가독성이 가장 높음! 
+        async function fnDoAsyncFunc() {
+            console.log(await fnProductReady(1, 2000)); // 2초 지연
+            console.log(await fnProductReady(2, 1000)); // 1초 지연
+            console.log(await fnProductReady(3, 500)); // 0.5초 지연
+        }        
+        // Promise로 비동기 함수 생성
+        function fnProductReady(pNum, pTime) {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    console.log(pNum);
+                    resolve('상품이 성공적으로 배송되었습니다.');
+                }, pTime); // 타이머로 가상의 네트워크 지연상황 연출함
+            });
+        }
+    </script>
+</body>
+</html>

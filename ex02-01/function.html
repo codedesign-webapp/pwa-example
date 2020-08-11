@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<button onclick="console.log(fnSayHello())" id="clickme">눌러 주세요!</button>
+	<br>
+	<button onclick="alert(fnPlusNumbers(3, 5))">3 + 5 = ?</button>
+	<button onclick="console.log(fnMinusNumbers(3, 5))">3 - 5 = ?</button>
+	<script>
+		// 버튼이 눌리면 HTML 엘리먼트에 직접 결과 표시
+		function fnSayHello() {
+			document.querySelector('#clickme').innerHTML = '안녕하세요!';
+		}
+		// 함수이름이 function 뒤에 위치, 결과값 반환
+		function fnPlusNumbers(pNum1, pNum2) {
+			return pNum1 + pNum2;
+		}
+		// 함수이름이 function 앞에 위치, 결과값 반환
+		const fnMinusNumbers = function (pNum1, pNum2) {
+			return pNum1 - pNum2;
+		}
+	</script>
+</body>
+</html>

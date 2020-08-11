@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+  <div id="main">
+    <!-- sTitle 값을 받아서 HTML의 엘리먼트 값으로 변환하여 표시함 -->
+    <p>{{ sTitle }}</p>
+  </div>
+  <script>
+      // Vue 객체를 생성하여 앱을 초기화하고 시작함
+      new Vue({
+        el: '#main', // id 선택자인 "main"의 div 엘리먼트와 앱을 연결시켜 구동
+        data: {
+          // {{ sTitle }}로 데이터 값을 전달함
+          sTitle: '안녕하세요!'
+        }
+      });
+  </script>
+</body>
+</html>

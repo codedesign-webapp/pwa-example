@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <button onclick="
+        // 로컬 JSON 텍스트 표시
+        fetch('./data.json')
+            .then(pResponse => pResponse.text())
+            .then(pJSON => console.log(pJSON));
+    ">JSON 로컬 읽기</button>
+
+    <button onclick="
+        /*
+        // 원격 JSON 텍스트 표시
+        fetch('https://cors-anywhere.herokuapp.com/'+'https://jsonplaceholder.typicode.com/posts/1')
+        */
+        // 책의 내용은 jsonplaceholder 사이트가 cors를 지원하지 않을 때를 대비하여 작성되었습니다. 현재는 cors-anywhere를 지원하므로 다음처럼 사용하지 않을 때 정상 실행됩니다.
+        fetch('https://jsonplaceholder.typicode.com/posts/1')
+            .then(pResponse => pResponse.text())
+            .then(pJSON => console.log(pJSON))
+    ">JSON 원격 읽기</button>
+</body>
+</html>

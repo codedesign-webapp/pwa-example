@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.2.x/dist/vuetify.min.css" rel="stylesheet">
+    <style>
+        /* 테두리를 볼 수 있도록 그리드 스타일 설정 */
+        .border_style {
+            border-color: rgb(5, 121, 30);
+            /* 초록색 */
+            border-width: 1px;
+            border-style: solid;
+            background-color: rgb(153, 204, 14);
+            /* 연한 초록색 */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <v-app>
+            <v-content>
+                <v-container>
+                    <!-- 한 행은 12개의 열이 기준 -->
+                    <v-row text-center>
+                        <v-col cols="12" class="border_style">xs12</v-col>
+                        <v-col cols="6" class="border_style">xs6</v-col>
+                        <v-col cols="3" class="border_style">xs3</v-col>
+
+                        <!-- 현재 열의 개수가 9개인데 열 4개를 추가하면 12를 초과하므로 자동 줄바꿈됨 -->
+                        <v-col cols="4" class="border_style">xs4</v-col>
+
+                        <!-- 총 12개의 열을 추가함. 8개 열을 채운 후 4개의 열은 자동으로 줄바꿈 됨 -->
+                        <v-col cols="1" v-for="item in 12" v-bind:key="item.id" class="border_style">xs1</v-col>
+                    </v-row>
+                    <br>
+                    <!-- 총 20개 생성함. 열의 개수가 12개를 넘으면 자동으로 줄 바꿈 -->
+                    <v-row text-center>
+                        <v-col cols="1" v-for="item in 20" v-bind:key="item.id" class="border_style">xs1</v-col>
+                    </v-row>
+                </v-container>
+                <v-container fluid>
+                    <v-row text-center>
+                        <v-col sm="4" class="border_style">sm4</v-col>
+                        <!-- offset으로 그리드 사이에 4개의 열 간격을 띄움 -->
+                        <v-col sm="4" offset-sm="4" class="border_style">4</v-col>
+                    </v-row>
+                </v-container>
+            </v-content>
+        </v-app>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.x/dist/vuetify.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            vuetify: new Vuetify()
+        })
+    </script>
+</body>
+
+</html>

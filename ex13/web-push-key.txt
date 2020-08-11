@@ -1,0 +1,11 @@
+- 아래 공개키와 비공개키는 사용법을 알려드리기 위해 샘플로 인용한 것 입니다. 책의 내용을 참고하여 직접 생성하여 사용하시면 됩니다.
+  
+=======================================
+
+* 공개키(Public Key):
+BMCrjoJDTdJBQYp7DPbT5dtCO-DlxmtCa5SxP3vu8TMmrQn3UKzx82o3LMlDrsqiR8Bu2zScioV4b3g4CeiByg0
+
+* 비공개키(Private Key):
+C26PvG4MP4sMbQX3fPgyMLCxdobwn8-KyszBtq5zhDA
+
+=======================================
