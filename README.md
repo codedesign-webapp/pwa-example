@@ -16,7 +16,7 @@
 
 이 곳은 **'Do it! 프로그레시브 웹앱 만들기'** (이지스퍼블리싱, 김응석 저) 책 **실습예제 완성 소스코드 원격저장소(Repository)** 입니다.
 
-- 버전에 상관 없이 실행할 수 있는 `완성된 소스파일`과 책 내용에 따라 직접 따라해 볼 수 있는 `프로젝트 템플릿`이 준비되어 있습니다.
+- 버전에 상관 없이 실행할 수 있는 `완성된 소스파일`과 책 내용에 따라 직접 따라해 볼 수 있는 `프로젝트 템플릿(boilerplate)`이 준비되어 있습니다.
 
 <br>
 
@@ -101,7 +101,7 @@
 
 This is a **source code repository** for practicing examples of the book which is **'Do it! Making Progressive Web Apps'** (Easys Publishing, Eungsuk Kim).
 
-- `A complete source file` that can be executed regardless of version and `a project template` that can be followed directly according to the contents of the book are prepared.
+- `A complete source file` that can be executed regardless of version and `a project template(boilerplate)` that can be followed directly according to the contents of the book are prepared.
 
 <br>
 
@@ -144,7 +144,7 @@ By following the various examples in this book, you can naturally master the 14 
 ## 4. How to use
 
 - The folder name `ex01-01` means that it is `the first example in Chapter 1`. It contains the completed source code.
-- The folder name `ex05-07_start` means the `project template used when starting`. You can learn by opening the start folder and entering the source code according to the description of the book.
+- The folder name `ex05-07_start` means the `project template(boilerplate) used when starting`. You can learn by opening the start folder and entering the source code according to the description of the book.
 
 <br>
 
