@@ -49,7 +49,7 @@
 <br><br>
 
 > <strong>CODE*DESIGN 웹앱 : https://CODE-DESIGN.web.app</strong>
-
+>
 > 'CODE*DESIGN 웹앱'은 PWA 프로그레시브 웹앱의 개발과 UIUX 디자인 방법의 스터디를 위한  커뮤니티 카페입니다.
 
 <br><br><br>
