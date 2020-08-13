@@ -4,7 +4,7 @@
 
 # "Do it! 프로그레시브 웹앱 만들기" 책 실습 소스코드
 
-<br>
+<br><br>
 
 <p align="center">
 <img src="https://github.com/codedesign-webapp/pwa-about/blob/master/images/pwa-img-3d.png" width="270">
