@@ -2,7 +2,7 @@
 <p align="center"><img src="https://github.com/codedesign-webapp/pwa-about/blob/master/images/pwa-logo.png"></p>
 <br><br>
 
-# "Do it! 프로그레시브 웹앱 만들기" 책 실습 소스코드 소개
+# "Do it! 프로그레시브 웹앱 만들기" 책 실습 소스코드
 
 <br>
 
