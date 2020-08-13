@@ -99,7 +99,7 @@
 
 ## 1. Introduction to sample files
 
-This is a **source code repository** for practicing examples of the book which is **'Do it! Making Progressive Web Apps'** (Easys Publishing, Eungsuck Kim).
+This is a **source code repository** for practicing examples of the book which is **'Do it! Making Progressive Web Apps'** (Easys Publishing, Eungsuk Kim).
 
 - `A complete source file` that can be executed regardless of version and `a project template` that can be followed directly according to the contents of the book are prepared.
 
