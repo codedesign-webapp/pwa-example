@@ -80,3 +80,88 @@
 > 'CODE*DESIGN 웹앱'은 PWA 프로그레시브 웹앱의 개발과 UIUX 디자인 방법의 스터디를 위한  커뮤니티 카페입니다.
 
 <br><br><br>
+
+***
+
+<br><br>
+<p align="center"><img src="https://github.com/codedesign-webapp/pwa-about/blob/master/images/pwa-logo.png"></p>
+<br><br>
+
+# "Do it! Making Progressive Web Apps" Book Practice Source Code
+
+<br><br>
+
+<p align="center">
+<img src="https://github.com/codedesign-webapp/pwa-about/blob/master/images/pwa-img-3d.png" width="270">
+</p>
+
+<br>
+
+## 1. Introduction to sample files
+
+This is a **source code repository** for practicing examples of the book which is **'Do it! Making Progressive Web Apps'** (Easys Publishing, Eungsuck Kim).
+
+- A `complete source file` that can be executed regardless of version and a `project template` that can be followed directly according to the contents of the book are prepared.
+
+<br>
+
+For a detailed introduction to the book, please refer to the link below.
+
+- What is the book **'Do it! Making Progressive Web Apps'**?
+
+  > https://github.com/codedesign-webapp/pwa-about
+
+<br>
+
+## 2. 14 key topics to practice with examples
+
+By following the various examples in this book, you can naturally master the 14 key topics: These skills are essential when developing modern web and mobile apps, giving you a broad experience in growing as a front-end developer.
+
+```
+1. ES6+ essential features
+2. Basic & Advanced for Vue.js, Vuetify.js
+3. Google Material Design Specification 2
+4. Responsive Web Programming
+5. Firebase real-time DB
+6. Workbox runtime cache
+7. Mobile hardware control
+8. Email-Google authentication
+9. Push Notification
+10. Offline synchronization
+11. Making hybrid apps with Apache Cordova
+12. PWA → Native App Conversion
+13. Publishing on Google Play Store
+14. Serverless Programming
+```
+<br>
+
+## 3. Tools
+
+- Source Code Editor: `Visual Studio Code`
+
+<br>
+
+## 4. How to use
+
+- The folder name `ex01-01` means that it is `the first example in Chapter 1`. It contains the completed source code.
+- The folder name `ex05-07_start` means the `project template used when starting`. You can learn by opening the start folder and entering the source code according to the description of the book.
+
+<br>
+
+## 5. Q&A and the latest news
+
+If you have any questions while reading a book, ask the <strong> 'CODE*DESIGN web app'</strong> community cafe operated by the author. You can also find the latest news related to Progressive Web Apps.
+
+- `Easys Publishing homepage` : www.easyspub.co.kr
+- `CODE*DESIGN web app` : https://code-design.web.app
+
+<br>
+
+Thank you.
+
+<br><br>
+> <strong>CODE*DESIGN web app: https://CODE-DESIGN.web.app</strong>
+>
+> 'CODE*DESIGN Web App' is a internet community cafe for PWA Progressive Web App development and UI/UX design method studies.
+
+<br><br><br>
