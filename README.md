@@ -65,7 +65,7 @@
 
 ## 5. 질의 응답과 최신 소식 제공
 
-책을 읽다가 궁금한 점은 저자가 직접 운영하는 <strong>'CODE*DESIGN 웹앱'</strong> 커뮤니티 카페에 질문해 보세요. 또한 프로그레시브 웹앱 관련 최신 소식도 만날 수 있습니다. 
+책을 읽다가 궁금한 점은 이지스퍼블리싱 홈페이지나 저자가 직접 운영하는 <strong>'CODE*DESIGN 웹앱'</strong> 커뮤니티 카페에 질문해 보세요. 또한 프로그레시브 웹앱 관련 최신 소식도 만날 수 있습니다. 
 - `이지스퍼블리싱 홈페이지` : www.easyspub.co.kr
 - `CODE*DESIGN 웹앱` : https://code-design.web.app
 
@@ -150,7 +150,7 @@ By following the various examples in this book, you can naturally master the 14 
 
 ## 5. Q&A and the latest news
 
-If you have any questions while reading a book, ask the <strong> 'CODE*DESIGN web app'</strong> community cafe operated by the author. You can also find the latest news related to Progressive Web Apps.
+If you have any questions while reading a book, ask the <strong> Easys Publishing homepage </strong> or <strong> 'CODE*DESIGN web app'</strong> community cafe operated by the author. You can also find the latest news related to Progressive Web Apps.
 
 - `Easys Publishing homepage` : www.easyspub.co.kr
 - `CODE*DESIGN web app` : https://code-design.web.app
