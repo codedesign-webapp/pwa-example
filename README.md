@@ -66,17 +66,17 @@
 
 - 깃허브 사용이 처음이신 분들은 [Code] - [Download ZIP] 버튼을 선택하면 압축된 ZIP 파일을 다운로드 받을 수 있습니다. 
 
-<p align="center"><img src="https://github.com/codedesign-webapp/pwa-about/blob/master/images/download-zip.png" width="300"></p>
+<p align="center"><img src="https://github.com/codedesign-webapp/pwa-about/blob/master/images/download-zip.png" width="600"></p>
 
 - 깃허브 계정을 가지고 계시면 우측 상단의 [Fork] 버튼을 누르면 자신의 계정으로 복제됩니다.
 
-<p align="center"><img src="https://github.com/codedesign-webapp/pwa-about/blob/master/images/fork.png" width="300"></p>
+<p align="center"><img src="https://github.com/codedesign-webapp/pwa-about/blob/master/images/fork.png" width="600"></p>
 
 - 깃허브 사용에 익숙하신 분들은 git clone 명령으로 다운로드 받아 사용하시면 됩니다.
 
-```
-git clone https://github.com/codedesign-webapp/pwa-example
-```
+  ``` git
+  git clone https://github.com/codedesign-webapp/pwa-example
+  ```
 
 <br>
 
