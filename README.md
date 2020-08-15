@@ -58,6 +58,24 @@
 
 ## 4. 사용방법
 
+### 다운로드 방법
+
+- 깃허브 사용이 처음이신 분들은 [Code] - [Download ZIP] 버튼을 선택하면 압축된 ZIP 파일을 다운로드 받을 수 있습니다. 
+
+<p align="center"><img src="https://github.com/codedesign-webapp/pwa-about/blob/master/images/download-zip.png"></p>
+
+- 깃허브 계정을 가지고 계시면 우측 상단의 [Fork] 버튼을 누르면 자신의 계정으로 복제됩니다.
+
+<p align="center"><img src="https://github.com/codedesign-webapp/pwa-about/blob/master/images/fork.png"></p>
+
+- 깃허브 사용에 익숙하신 분들은 git clone 명령으로 다운로드 받아 사용하시면 됩니다.
+
+```
+git clone https://github.com/codedesign-webapp/pwa-example
+```
+
+### 폴더 이름 의미
+
 - 폴더 이름이 `ex01-01`은 `1장의 첫번째 예제`라는 의미입니다. 완성된 소스코드가 들어 있습니다.  
 - 폴더 이름이 `ex05-07_start`는 `시작할 때 활용하는 프로젝트 템플릿`을 의미합니다. start 폴더를 열어 책 설명에 맞춰서 소스코드를 입력하며 학습하시면 됩니다. 
 
