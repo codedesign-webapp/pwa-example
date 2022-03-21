@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.2.x/dist/vuetify.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
     <style>
         /* 테두리를 볼 수 있도록 그리드 스타일 설정 */
         .border_style {
@@ -22,7 +22,7 @@
 <body>
     <div id="app">
         <v-app>
-            <v-content>
+            <v-main>
                 <v-container>
                     <!-- 한 행은 12개의 열이 기준 -->
                     <v-row text-center>
@@ -49,12 +49,12 @@
                         <v-col sm="4" offset-sm="4" class="border_style">4</v-col>
                     </v-row>
                 </v-container>
-            </v-content>
+            </v-main>
         </v-app>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.x/dist/vuetify.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
     <script>
         new Vue({
             el: '#app',

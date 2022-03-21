@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.2.x/dist/vuetify.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
 </head>
 
 <body>
   <div id="app">
     <v-app>
       <!-- 내용 영역에 선택된 메뉴명을 표시함. flexbox를 이용해서 가운데 정렬시킴 -->
-      <v-content>
+      <v-main>
         <v-card height="100%" class="d-flex display-2 align-center justify-center">선택: {{ sSelect }}</v-card>
-      </v-content>
+      </v-main>
 
       <!-- 하단 영역에 바닥 네비게이션 메뉴를 absolute로고정시켜 표시함 -->
       <v-footer>
@@ -39,7 +39,7 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.2.x/dist/vuetify.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
   <script>
     new Vue({
       el: '#app',
