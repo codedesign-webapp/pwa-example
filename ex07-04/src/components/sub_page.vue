@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-content>
+    <v-main>
         <div class="text-center display-1 my-4">서브 페이지입니다.</div>
         <v-divider></v-divider>
         <!-- store에 있는 sTitle 값을 가져와 표시함 -->
@@ -10,7 +10,7 @@
             <v-icon>mdi-replay</v-icon>
           </v-btn>
         </div>
-    </v-content>
+    </v-main>
   </v-container>
 </template>
 
