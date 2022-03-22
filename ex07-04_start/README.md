@@ -1,4 +1,4 @@
-# ex07-04_start
+# ex07-04
 
 ## Project setup
 ```
@@ -13,16 +13,6 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
 ```
 
 ### Customize configuration
