@@ -38,12 +38,12 @@
                     </v-row>
                     <br>
                     <!-- 총 20개 생성함. 열의 개수가 12개를 넘으면 자동으로 줄 바꿈 -->
-                    <v-row text-center>
+                    <v-row class="text-center">
                         <v-col cols="1" v-for="item in 20" v-bind:key="item.id" class="border_style">xs1</v-col>
                     </v-row>
                 </v-container>
                 <v-container fluid>
-                    <v-row text-center>
+                    <v-row class="text-center">
                         <v-col sm="4" class="border_style">sm4</v-col>
                         <!-- offset으로 그리드 사이에 4개의 열 간격을 띄움 -->
                         <v-col sm="4" offset-sm="4" class="border_style">4</v-col>
