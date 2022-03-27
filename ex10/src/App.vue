@@ -1,7 +1,7 @@
 <template>
 	<v-app>
 		<!-- 툴바에 제목, 버튼을 삽입 -->
-		<v-app-bar color="blue-grey" dark fixed>
+		<v-app-bar app color="blue-grey" dark fixed>
 			<v-app-bar-nav-icon></v-app-bar-nav-icon>
 			<v-toolbar-title>사진 갤러리</v-toolbar-title>
 			<v-spacer></v-spacer>
@@ -9,7 +9,7 @@
 				<v-icon>more_vert</v-icon>
 			</v-btn>
 		</v-app-bar>
-		<v-content>
+		<v-main>
 			<!-- 카드 그리드 사이에 여백 설정-->
 			<v-container>
 				<v-row>
@@ -28,7 +28,7 @@
 					</v-col>
 				</v-row>
 			</v-container>
-		</v-content>
+		</v-main>
 		<!-- 바닥글 고정 -->
 		<v-footer fixed>
 			<div class="mx-auto">&copy; CODE-DESIGN.web.app</div>
