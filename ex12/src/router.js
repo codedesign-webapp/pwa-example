@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 // 파이어베이스 앱 객체 모듈 가져오기
-import firebase from 'firebase/app'
+import firebase from 'firebase/compat/app'
 
 Vue.use(Router)
 

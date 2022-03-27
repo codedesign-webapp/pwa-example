@@ -50,9 +50,9 @@
         </v-btn>
       </v-toolbar-items>
     </v-app-bar>
-    <v-content>
+    <v-main>
       <router-view />
-    </v-content>
+    </v-main>
     <v-footer app>
       <div class="mx-auto">&copy; CODE-DESIGN.web.app</div>
     </v-footer>

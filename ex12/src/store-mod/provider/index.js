@@ -1,7 +1,7 @@
 // 파이어베이스 앱 객체 모듈 가져오기
-import firebase from 'firebase/app'
+import firebase from 'firebase/compat/app'
 // 파이어베이스 패키지 모듈 가져오기
-import 'firebase/firebase-auth'
+import 'firebase/compat/auth'
 import router from '@/router'
 
 export default {
@@ -36,7 +36,7 @@ export default {
         .then(pUserInfo => {
           // 신규 회원 이메일 정보를 스토어에 저장
           commit('fnSetUser', {
-            email: pUserInfo.email
+            email: pUserInfo.user.email  // <-- 파이어베이스 v9 마이그레이션 : user 추가
           })
           commit('fnSetLoading', false) // 스토어에 시간완료 상태 변경
           commit('fnSetErrorMessage', '') // 스토어 에러메시지 초기화
@@ -58,10 +58,10 @@ export default {
         .then(pUserInfo => {
           // 로그인이 성공하면 스토어에 계정정보 저장
           commit('fnSetUser', {
-            id: pUserInfo.uid,
-            name: pUserInfo.displayName,
-            email: pUserInfo.email,
-            photoURL: pUserInfo.photoURL
+            id: pUserInfo.user.uid,           // <-- 파이어베이스 v9 마이그레이션 : user 추가
+            name: pUserInfo.user.displayName, // <-- 파이어베이스 v9 마이그레이션 : user 추가
+            email: pUserInfo.user.email,      // <-- 파이어베이스 v9 마이그레이션 : user 추가
+            photoURL: pUserInfo.user.photoURL // <-- 파이어베이스 v9 마이그레이션 : user 추가
           })
           commit('fnSetLoading', false) // 시간걸림 상태 해제
           commit('fnSetErrorMessage', '') // 에러메세지 초기화
@@ -88,10 +88,10 @@ export default {
         .then(pUserInfo => {
           // 로그인이 성공하면 스토어에 계정정보 저장
           commit('fnSetUser', {
-            id: pUserInfo.uid,
-            name: pUserInfo.displayName,
-            email: pUserInfo.email,
-            photoURL: pUserInfo.photoURL
+            id: pUserInfo.user.uid,            // <-- 파이어베이스 v9 마이그레이션 : user 추가
+            name: pUserInfo.user.displayName,  // <-- 파이어베이스 v9 마이그레이션 : user 추가
+            email: pUserInfo.user.email,       // <-- 파이어베이스 v9 마이그레이션 : user 추가
+            photoURL: pUserInfo.user.photoURL  // <-- 파이어베이스 v9 마이그레이션 : user 추가
           })
           commit('fnSetLoading', false) // 시간걸림 상태 해제
           commit('fnSetErrorMessage', '') // 에러메세지 초기화
