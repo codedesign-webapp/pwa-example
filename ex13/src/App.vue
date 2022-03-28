@@ -24,10 +24,10 @@
 				!drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>푸시알림 구독</v-toolbar-title>
     </v-app-bar>
-    <v-content>
+    <v-main>
       <div class="mt-5"></div>
       <router-view />
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
