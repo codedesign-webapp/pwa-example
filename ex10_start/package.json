@@ -1,5 +1,5 @@
 {
-  "name": "ex10",
+  "name": "ex10_start",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,17 +9,12 @@
   "dependencies": {
     "core-js": "^3.8.3",
     "register-service-worker": "^1.7.2",
-    "vue": "^2.6.14",
-    "vuetify": "^2.6.0"
+    "vue": "^2.6.14"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-pwa": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "sass": "~1.32.0",
-    "sass-loader": "^10.0.0",
-    "vue-cli-plugin-vuetify": "~2.4.8",
-    "vue-template-compiler": "^2.6.14",
-    "vuetify-loader": "^1.7.0"
+    "vue-template-compiler": "^2.6.14"
   }
 }
