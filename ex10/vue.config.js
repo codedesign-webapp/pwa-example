@@ -1,6 +1,5 @@
 module.exports = {
     pwa: {
-        workboxPluginMode: 'GenerateSW',
         workboxOptions: {
             runtimeCaching: [{
                     urlPattern: /\.png$/,
