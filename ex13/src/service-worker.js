@@ -1,10 +1,12 @@
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.4.1/workbox-sw.js');  // <-- workbox 최신번전 CDN 추가
+
 // Workbox를 디버그모드로 설정 
 workbox.setConfig({
   debug: false,
 });
 
 // Vue-Cli에서 기본으로 제공하는 프리캐시 설정을 Workbox에 적용 
-workbox.precaching.precacheAndRoute(self.__precacheManifest);
+workbox.precaching.precacheAndRoute(self.__WB_MANIFEST);  // <-- self.__WB_MANIFEST로 변경
 
 // 푸시 메세지 받는 경우 처리
 self.addEventListener('push', function (event) {
