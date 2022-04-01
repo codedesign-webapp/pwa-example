@@ -11,10 +11,10 @@
     <v-icon>signal_wifi_off</v-icon>
    </v-btn>
   </v-app-bar>
-  <v-content>
+  <v-main>
    <!-- 동기화 페이지 컴포넌트 엘리먼트 사용 -->
    <c-syncpage/>
-  </v-content>
+  </v-main>
  </v-app>
 </template>
 
