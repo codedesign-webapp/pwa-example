@@ -8,10 +8,7 @@
   },
   "installed_plugins": {
     "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.cordova.helloworld"
-    },
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.cordova.helloworld"
+      "PACKAGE_NAME": "com.vue.example.app"
     }
   },
   "dependent_plugins": {}

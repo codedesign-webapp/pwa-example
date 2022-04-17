@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <v-content>
+    <v-main>
       <!-- fill-height는 브라우저 높이를 100%, 수직으로 가운데 정렬시킴 -->
       <v-container fluid fill-height>
         <v-row>
@@ -13,7 +13,7 @@
           </v-col>
         </v-row>
       </v-container>
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 <script>
