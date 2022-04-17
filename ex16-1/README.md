@@ -1,4 +1,4 @@
-# ex16-1_start
+# ex16-1
 
 ## Project setup
 ```

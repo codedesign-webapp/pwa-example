@@ -7,7 +7,7 @@
         <v-app-bar-nav-icon></v-app-bar-nav-icon>
         <v-toolbar-title>To-Do 리스트</v-toolbar-title>
       </v-app-bar>
-      <v-content>
+      <v-main>
         <v-container>
           <v-row my-5>
             <v-col cols="8" offset="1">
@@ -71,7 +71,7 @@
             </v-col>
           </v-row>
         </v-container>
-      </v-content>
+      </v-main>
     </v-card>
   </v-app>
 </template>
