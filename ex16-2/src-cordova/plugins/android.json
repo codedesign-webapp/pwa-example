@@ -8,16 +8,13 @@
   },
   "installed_plugins": {
     "cordova-plugin-battery-status": {
-      "PACKAGE_NAME": "io.cordova.check"
+      "PACKAGE_NAME": "io.codova.check"
     },
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "io.cordova.check"
+      "PACKAGE_NAME": "io.codova.check"
     },
     "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "io.cordova.check"
-    },
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "io.cordova.check"
+      "PACKAGE_NAME": "io.codova.check"
     }
   },
   "dependent_plugins": {}

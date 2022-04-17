@@ -7,16 +7,13 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-battery-status": {
+    "cordova-plugin-splashscreen": {
       "PACKAGE_NAME": "com.vue.example.app"
     },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.vue.example.app"
     },
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.vue.example.app"
-    },
-    "cordova-plugin-whitelist": {
+    "cordova-plugin-battery-status": {
       "PACKAGE_NAME": "com.vue.example.app"
     }
   },

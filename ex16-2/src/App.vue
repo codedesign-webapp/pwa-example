@@ -4,7 +4,7 @@
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
       <v-toolbar-title>모바일 디바이스 상태첵크</v-toolbar-title>
     </v-app-bar>
-    <v-content>
+    <v-main>
       <v-row>
         <v-col cols="10" offset="1" class="my-3">
           <v-card color="blue-grey" class="white--text">
@@ -32,7 +32,7 @@
           </v-list>
         </v-col>
       </v-row>
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
