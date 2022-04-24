@@ -1,6 +1,6 @@
 {
-  "name": "To-Do 리스트",
-  "short_name": "To-Do 리스트",
+  "name": "사진 갤러리",
+  "short_name": "사진 갤러리",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
@@ -15,6 +15,7 @@
   ],
   "start_url": "./index.html",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#ffffff",
   "theme_color": "#ffffff"
 }
